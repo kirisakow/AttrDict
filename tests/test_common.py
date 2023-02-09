@@ -3,13 +3,24 @@
 Common tests that apply to multiple Attr-derived classes.
 """
 import copy
-from collections import namedtuple, Mapping, ItemsView, KeysView, ValuesView
+from collections.abc import (
+    namedtuple,
+    Mapping,
+    ItemsView,
+    KeysView,
+    ValuesView
+)
 from itertools import chain
 import pickle
 from sys import version_info
 
-from nose.tools import (assert_equals, assert_not_equals,
-                        assert_true, assert_false, assert_raises)
+from nose.tools import (
+    assert_equals,
+    assert_not_equals,
+    assert_true,
+    assert_false,
+    assert_raises
+)
 import six
 
 from attrdict.mixins import Attr
